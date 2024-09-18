@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.perfil {
+    margin-bottom: 50px;
+    width: 544px;
+    height: 200px;
+    background-color: #dadada;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 166px;
+    border-radius: 5px;
+
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 50px;
+    background-size: 230px;
+    background-image: url("https://lastfm.freetls.fastly.net/i/u/ar0/0462ba9cf3ee6009c433d9e606e7ef10.jpg");
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+p {
+    color: #252525;
+}
+
+.caixas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 894px;
+    height: 271px;
+    background-color: aliceblue;
+}
+
+.caixa {
+    width: 252px;
+    height: 271px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.caixa img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.caixa p {
+    background-color: #ccc;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #555;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+
+    .perfil {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .foto {
+        width: 150px;
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    h2, p {
+        text-align: center;
+    }
+
+    .caixas {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .caixa {
+        width: 100%;
+        height: auto;
+    }
+
+    .caixa img {
+        width: 80px;
+        height: 80px;
+    }
+}
