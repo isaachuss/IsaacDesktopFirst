@@ -1,13 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #b87100;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    width: 80%;
     max-width: 1000px;
     text-align: center;
 }
@@ -16,11 +15,10 @@ body {
     margin-bottom: 50px;
     width: 544px;
     height: 200px;
-    background-color: #dadada;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 166px;
+    margin-left: 180px;
     border-radius: 5px;
 
 }
@@ -28,20 +26,25 @@ body {
 .foto {
     width: 200px;
     height: 200px;
-    background-color: #ccc;
+    background-color: #000000;
     border-radius: 50%;
     margin-right: 50px;
-    background-size: 230px;
-    background-image: url("https://lastfm.freetls.fastly.net/i/u/ar0/0462ba9cf3ee6009c433d9e606e7ef10.jpg");
+    background-size: 240px;
+    background-repeat: no-repeat;
+    background-image: url("https://i.pinimg.com/736x/4a/85/2d/4a852d51374c252ff14c5fb8ac48db4d.jpg");
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 h2 {
     margin-bottom: 5px;
     font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.48);
+    color: #eebb73;
 }
 
 p {
-    color: #252525;
+    color: #ffe0b6;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.48);
 }
 
 .caixas {
@@ -50,35 +53,38 @@ p {
     gap: 20px;
     width: 894px;
     height: 271px;
-    background-color: aliceblue;
 }
 
 .caixa {
     width: 252px;
-    height: 271px;
-    background-color: #e0e0e0;
+    height: 291px;
+    background-color: #583600;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .caixa img {
-    width: 100px;
-    height: 100px;
-    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 79px -24px rgba(0,0,0,1);
+    border-radius: 10px;
 }
 
 .caixa p {
-    background-color: #ccc;
+    background-color: #6c4403;
     width: 100%;
+    height: 50px;
     text-align: center;
-    padding: 10px;
-    color: #555;
+    color: #ffe0b6;
     border-radius: 0 0 10px 10px;
     margin-top: 20px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.48);
+    box-shadow: inset 0px 0px 79px -24px rgba(0,0,0,0.57);
 }
 
 .texto {
@@ -91,8 +97,7 @@ p {
     .perfil {
         flex-direction: column;
         width: 100%;
-        height: auto;
-        padding: 20px;
+        height: auto;;
         margin-left: 0;
         margin-right: 0;
     }
@@ -102,6 +107,7 @@ p {
         height: 150px;
         margin-right: 0;
         margin-bottom: 20px;
+        background-size: 180px;
     }
 
     h2, p {
@@ -110,17 +116,31 @@ p {
 
     .caixas {
         flex-direction: column;
-        width: 100%;
-        gap: 20px;
+        width: 254px;
+        height: 800px;
+        margin-bottom: 20px;
     }
 
     .caixa {
-        width: 100%;
-        height: auto;
+        width: 254px;
+        height: 271px;
+        margin-bottom: 20px;
     }
 
     .caixa img {
-        width: 80px;
-        height: 80px;
+        width: 200px;
+        height: 200px;
+    
+    }
+
+    .container {
+        width: 254px;
+        height: 1123px;
+        text-align: center;
+    }
+
+    .caixa p {
+        width: 254px;
+
     }
 }
